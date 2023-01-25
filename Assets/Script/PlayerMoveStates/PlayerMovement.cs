@@ -79,10 +79,4 @@ public class PlayerMovement : MonoBehaviour
 
         _characterController.Move(_velocity * Time.deltaTime);
     }
-
-    // private void OnDrawGizmos()
-    // {
-    //     Gizmos.color = Color.red;
-    //     Gizmos.DrawWireSphere(_spherePosition, _characterController.radius - 0.05f);
-    // }
 }
