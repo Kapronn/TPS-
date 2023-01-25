@@ -10,22 +10,26 @@ public class AimStateManager : MonoBehaviour
     
     [SerializeField] private float mouseSenseX = 1f;
     [SerializeField] private float mouseSenseY = 1f;
-    private float _xAxis, _yAxis;
     [SerializeField] private Transform cameraFollow;
     [HideInInspector] public Animator animator;
-    
+    private float _xAxis, _yAxis;
+
     [Header("CineMacine Camera")]
     [HideInInspector] public CinemachineVirtualCamera virtualCamera;
     [HideInInspector] public float currentFov;
     [HideInInspector] public float hipFov;
     public float adsFov = 40f;
     public float fovSmoothSpeed = 10f;
+
+    [SerializeField] private Transform aimPos;
+    [SerializeField] private float aimSmoothSpeed = 20;
+    [SerializeField] private LayerMask aimMask;
     private void Start()
     {
         virtualCamera = GetComponentInChildren<CinemachineVirtualCamera>();
         hipFov = virtualCamera.m_Lens.FieldOfView;
         
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponent<Animator>();
         SwitchState(Hip);
     }
 
@@ -37,6 +41,13 @@ public class AimStateManager : MonoBehaviour
 
         virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(virtualCamera.m_Lens.FieldOfView, currentFov, fovSmoothSpeed * Time.deltaTime);
         _currentState.UpdateState(this);
+        
+        Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
+        Ray ray = Camera.main.ScreenPointToRay(screenCenter);
+        if(Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, aimMask ))
+        {
+            aimPos.position = Vector3.Lerp(aimPos.position, hit.point, aimSmoothSpeed * Time.deltaTime);
+        }
     }
 
     private void LateUpdate()

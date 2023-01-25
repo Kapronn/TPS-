@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponent<Animator>();
         _characterController = GetComponent<CharacterController>();
         SwitchState(IdleState);
     }
