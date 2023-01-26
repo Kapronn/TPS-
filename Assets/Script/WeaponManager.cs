@@ -15,6 +15,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private Transform barrelPosition;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int bulletsPerShot;
+    public int damage = 20;
     private AimStateManager _aim;
 
     [Header("Ammo Mangement")]
@@ -78,6 +79,9 @@ public class WeaponManager : MonoBehaviour
         for (int i = 0; i < bulletsPerShot; i++)
         {
             GameObject currentBullet = Instantiate(bulletPrefab, barrelPosition.position, barrelPosition.rotation);
+            Bullet bulletScript = currentBullet.GetComponent<Bullet>();
+            bulletScript.weapon = this;
+            
             Rigidbody rigidbody = currentBullet.GetComponent<Rigidbody>();
             rigidbody.AddForce(barrelPosition.forward * bulletVelocity, ForceMode.Impulse);
         }
