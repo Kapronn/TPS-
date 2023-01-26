@@ -8,9 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed, walkBackSpeed;
     public float runSpeed, runBackSpeed;
     public float crouchSpeed, crouchBackSpeed;
-    
+    [SerializeField] private float jumpForce = 5f;
+
     private CharacterController _characterController;
-    public float HorizontalInput { get; private set; } 
+    public float HorizontalInput { get; private set; }
     public float VerticalInput { get; private set; }
     [HideInInspector] public Vector3 direction;
 
@@ -21,12 +22,15 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Gravity")]
     [SerializeField] private float gravity = -9.81f;
+    [HideInInspector] public bool jumped;
     private Vector3 _velocity;
 
     [Header("States")]
+    public MovementBaseState PreviousState;
     private MovementBaseState _currentState;
 
     public IdleState IdleState = new IdleState();
+    public JumpState JumpingState = new JumpState();
     public WalkingState WalkingState= new WalkingState();
     public RunningState RunningState = new RunningState();
     public CrouchingState CrouchingState = new CrouchingState();
@@ -65,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         _characterController.Move(direction.normalized * (Time.deltaTime * currentMoveSpeed));
     }
 
-    bool IsGrounded()
+    public bool IsGrounded()
     {
         _spherePosition = new Vector3(transform.position.x, transform.position.y - sphereToGround, transform.position.z);
         if (Physics.CheckSphere(_spherePosition, _characterController.radius - 0.05f, groundMask)) return true;
@@ -79,4 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
         _characterController.Move(_velocity * Time.deltaTime);
     }
+
+    public void JumpForce() => _velocity.y += jumpForce;
+    public bool Jumped() => jumped = true;
 }
