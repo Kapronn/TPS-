@@ -10,10 +10,12 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField] int health = 100;
     private float _currentTime;
     [SerializeField] private float takeDamageColdDown = 2f;
+    private SaveWinDeathsCount _saveWinDeathsCount;
 
     private void Start()
     {
         _levelManager = FindObjectOfType<LevelManager>();
+        _saveWinDeathsCount = FindObjectOfType<SaveWinDeathsCount>();
     }
 
     private void Update()
@@ -50,8 +52,9 @@ public class PlayerHealthManager : MonoBehaviour
 
     void Die()
     {
-        _levelManager.LoadGameOverScene();
+        _saveWinDeathsCount.AddDeaths(1);
         Destroy(gameObject);
+        _levelManager.LoadGameOverScene();
     }
     
 
