@@ -101,7 +101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1804644449710351626
 Transform:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294597616047269464}
-  m_LocalRotation: {x: 0.000000029802315, y: 1, z: -0.000000029802315, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0.009000165, y: -0.071000315, z: 0.19000274}
   m_LocalScale: {x: 0.29999998, y: 0.30000007, z: 0.29999998}
   m_ConstrainProportionsScale: 0
@@ -128,7 +128,7 @@ Transform:
   - {fileID: 5252007174537258133}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!95 &8794408532006364296
 Animator:
   serializedVersion: 4
@@ -165,11 +165,11 @@ MonoBehaviour:
   semiAuto: 1
   bulletPrefab: {fileID: 8043808601219574772, guid: 4f58574c942759f439c38c3edeb97003, type: 3}
   barrelPosition: {fileID: 757605526921560876}
-  bulletVelocity: 500
+  bulletVelocity: 40
   bulletsPerShot: 1
   damage: 20
-  clipSize: 15
-  extraAmmo: 15
+  clipSize: 60
+  extraAmmo: 100
   currentAmmo: 0
   gunShot: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
   magInSound: {fileID: 8300000, guid: dbc755e072d02bd41a520d26ded701d0, type: 3}

@@ -24699,10 +24699,10 @@ MonoBehaviour:
   semiAuto: 1
   bulletPrefab: {fileID: 8043808601219574772, guid: 4f58574c942759f439c38c3edeb97003, type: 3}
   barrelPosition: {fileID: 4054408334955622871}
-  bulletVelocity: 500
+  bulletVelocity: 40
   bulletsPerShot: 1
   damage: 40
-  clipSize: 25
+  clipSize: 45
   extraAmmo: 50
   currentAmmo: 0
   gunShot: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}

@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float timeToDestroy = 4f;
     [HideInInspector] public WeaponManager weapon;
+    
     void Start()
     {
         Destroy(gameObject, timeToDestroy);
