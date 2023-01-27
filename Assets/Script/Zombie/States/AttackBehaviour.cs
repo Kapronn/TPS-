@@ -8,6 +8,7 @@ public class AttackBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindObjectOfType<PlayerMovement>().transform;
+        
     }
 
     
@@ -15,7 +16,7 @@ public class AttackBehaviour : StateMachineBehaviour
     {
         animator.transform.LookAt(player);
         float distance = Vector3.Distance(animator.transform.position, player.transform.position);
-        if (distance> 3) animator.SetBool("IsAttacking" , false);
+        if (distance> 2) animator.SetBool("IsAttacking" , false);
     }
 
     

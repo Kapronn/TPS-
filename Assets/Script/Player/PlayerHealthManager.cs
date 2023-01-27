@@ -1,19 +1,25 @@
 using System;
 using System.Collections;
+using Cinemachine;
 using UnityEngine;
 
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    private Level level;
+    private LevelManager _levelManager;
     [SerializeField] int health = 100;
     private float _currentTime;
     [SerializeField] private float takeDamageColdDown = 2f;
 
+    private void Start()
+    {
+        _levelManager = FindObjectOfType<LevelManager>();
+    }
+
     private void Update()
     {
+        
         _currentTime += Time.deltaTime;
-        Debug.Log(_currentTime);
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -44,14 +50,10 @@ public class PlayerHealthManager : MonoBehaviour
 
     void Die()
     {
+        _levelManager.LoadGameOverScene();
         Destroy(gameObject);
-        level.LoadGameOverScene();
     }
-
-    IEnumerable shotsColdDown()
-    {
-        yield return new WaitForSeconds(3);
-    }
+    
 
     public int Health()
     {

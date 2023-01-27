@@ -5,7 +5,7 @@ public class ChaseBehaviour : StateMachineBehaviour
 {
     private NavMeshAgent _agent;
     private Transform _player;
-    private float _attackRange = 2f;
+    private float _attackRange = 1.3f;
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

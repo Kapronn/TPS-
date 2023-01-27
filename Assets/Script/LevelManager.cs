@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Level : MonoBehaviour
+public class LevelManager : MonoBehaviour
     {
         public void LoadStartScene()
         {
@@ -12,7 +12,11 @@ public class Level : MonoBehaviour
         {
             SceneManager.LoadScene("GameScene");
         }
-        
+        public void LoadWinScene()
+        {
+            SceneManager.LoadScene("WinScene");
+          
+        }
         public void LoadGameOverScene()
         {
             SceneManager.LoadScene("GameOverScene");
