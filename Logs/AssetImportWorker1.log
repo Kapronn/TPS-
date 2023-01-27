@@ -15,7 +15,7 @@ D:/unity/Projects/TPS-
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52697
+54361
 Successfully changed project path to: D:/unity/Projects/TPS-
 D:/unity/Projects/TPS-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/unity/Projects/TPS-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 101.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 98.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path D:/unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,95 +63,121 @@ Initialize mono
 Mono path[0] = 'D:/unity/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/unity/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003394 seconds.
+Registered in 0.003938 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 100.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 105.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.729 seconds
+- Completed reload, in  0.746 seconds
 Domain Reload Profiling:
-	ReloadAssembly (729ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (747ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (543ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (555ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (335ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (346ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
+				InitializePlatformSupportModulesInManaged (63ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
+				RefreshPlugins (106ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005507 seconds.
+Registered in 0.005542 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\unity\Projects\TPS-\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\unity\Projects\TPS-\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path D:\unity\Projects\TPS-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4e64905d831f4883a53259ef37fb023b>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.290 seconds
+- Completed reload, in  1.358 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1291ms)
-		BeginReloadAssembly (215ms)
+	ReloadAssembly (1359ms)
+		BeginReloadAssembly (232ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (123ms)
-		EndReloadAssembly (954ms)
-			LoadAssemblies (79ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (1000ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
+			SetupTypeCache (296ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (474ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (495ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (315ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3931 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (132.6 KB). Loaded Objects now: 4394.
-Memory consumption went from 150.1 MB to 150.0 MB.
-Total: 3.586300 ms (FindLiveObjects: 0.362200 ms CreateObjectMapping: 0.103500 ms MarkObjects: 3.016100 ms  DeleteObjects: 0.103300 ms)
+Unloading 3928 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (132.7 KB). Loaded Objects now: 4391.
+Memory consumption went from 150.2 MB to 150.1 MB.
+Total: 4.049300 ms (FindLiveObjects: 0.406500 ms CreateObjectMapping: 0.105000 ms MarkObjects: 3.405000 ms  DeleteObjects: 0.131200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,161 +191,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 22689.142962 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Ak47Sounds/Ak47Load.wav
-  artifactKey: Guid(cca2e9821d4c6b54cafb15def06caeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Ak47Sounds/Ak47Load.wav using Guid(cca2e9821d4c6b54cafb15def06caeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62398660aeecdc759f00daeefa74df7d') in 0.130819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Gunshot 1.wav
-  artifactKey: Guid(c0dccd9257693614f93feaa0929e63c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Gunshot 1.wav using Guid(c0dccd9257693614f93feaa0929e63c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e99479999e7bc1d6e2abccc6fc7087a') in 0.010366 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Unload.wav
-  artifactKey: Guid(9e18e1b7508c60441aac6a772782bdcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Unload.wav using Guid(9e18e1b7508c60441aac6a772782bdcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f426bf7523f353475996690eaece0f') in 0.008002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Load.wav
-  artifactKey: Guid(ef3a5f2434b6b384f9f0546c3576ff8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4Load.wav using Guid(ef3a5f2434b6b384f9f0546c3576ff8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7180d615b13f435859dbd5f2d4808155') in 0.009171 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4ReleaseSlide.wav
-  artifactKey: Guid(11d876d2253d6cc4fa15bf559f2bd51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/M4Sounds/M4ReleaseSlide.wav using Guid(11d876d2253d6cc4fa15bf559f2bd51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4390a295ac19fa9e930915d4e4c4151f') in 0.008186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.709836 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Pistol1Sounds/Pistol1Slideback.mp3
-  artifactKey: Guid(4907452396e68ae489570d355412355c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Pistol1Sounds/Pistol1Slideback.mp3 using Guid(4907452396e68ae489570d355412355c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f28ea4fb5074ba1584f9deef6d4729e') in 0.012430 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.042842 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Shotgun2Sounds/Shotgun2Unload.mp3
-  artifactKey: Guid(7118f6fe47f4d3541a791d0ece961aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Shotgun2Sounds/Shotgun2Unload.mp3 using Guid(7118f6fe47f4d3541a791d0ece961aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1669934d4a8acb2cae655ad1486155c') in 0.008951 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.066199 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Shotgun1Sounds/ShotgunShot.wav
-  artifactKey: Guid(aba0e7c2063c83d409b27545638c97d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Shotgun1Sounds/ShotgunShot.wav using Guid(aba0e7c2063c83d409b27545638c97d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c10ea76045e6bb174f36c3fac806035') in 0.008833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/SMG1Sound/SMG1SlideBack.mp3
-  artifactKey: Guid(9d408a730366a15448e5d089c60dd7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/SMG1Sound/SMG1SlideBack.mp3 using Guid(9d408a730366a15448e5d089c60dd7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9121c4be41f442177aad88f6b07a5d93') in 0.008460 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/SMG1Sound/SMG1Shoot.wav
-  artifactKey: Guid(cb87c13fd4bf33341bd8592a79337bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/SMG1Sound/SMG1Shoot.wav using Guid(cb87c13fd4bf33341bd8592a79337bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554fc54d26851cdb14eca8eca1756b86') in 0.007860 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.257482 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/SMG2Gunshot.wav
-  artifactKey: Guid(323136d74015e0a4ebb1753dbe20e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/SMG2Gunshot.wav using Guid(323136d74015e0a4ebb1753dbe20e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b94ad82affe00048dec715ca9592cd') in 0.007219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Weapons/GunShotAudio/SMG2Sounds/smg2load.mp3
-  artifactKey: Guid(e730d841ed4a6c1409968f7124e7f270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/SMG2Sounds/smg2load.mp3 using Guid(e730d841ed4a6c1409968f7124e7f270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19fde5924e7196f55df7171cd2607e7') in 0.017920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Sniper1Sounds/Sniper1Gunshot.wav
-  artifactKey: Guid(7f7b63c7444e2254b9610c69b03f37af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Sniper1Sounds/Sniper1Gunshot.wav using Guid(7f7b63c7444e2254b9610c69b03f37af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf30beb781fc375f34335739212a6ab4') in 0.007805 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/smg2releaseslide.wav
-  artifactKey: Guid(ad8269a235a02a044b703881661c42ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/smg2releaseslide.wav using Guid(ad8269a235a02a044b703881661c42ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88095654d8afa72d515c08b1597fd529') in 0.008468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Weapons/GunShotAudio/SMG2Sounds/smg2unload.mp3
-  artifactKey: Guid(366a5b53ba91fec46bdd76e13de913c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/SMG2Sounds/smg2unload.mp3 using Guid(366a5b53ba91fec46bdd76e13de913c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca18401ab233a858acea7a55bc174b89') in 0.020246 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/smg2unload.mp3
-  artifactKey: Guid(444b3c3a3e364f54781ef1d1dacb3a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/SMG2Sounds/smg2unload.mp3 using Guid(444b3c3a3e364f54781ef1d1dacb3a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae9b852c539e8a8d63a671ddaf94be4') in 0.007635 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Weapons/GunShotAudio/Sniper1Sounds/Sniper1Slideback.wav
-  artifactKey: Guid(5e56b7a90838ab047b08ac8c2604e563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/Sniper1Sounds/Sniper1Slideback.wav using Guid(5e56b7a90838ab047b08ac8c2604e563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad891bfc7b3248fd7ea0e7ba111cb4d') in 0.020355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Sniper1Sounds/Sniper1UnloadClip.wav
-  artifactKey: Guid(73147e391f7f4ed42b6390fee4b10066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Sniper1Sounds/Sniper1UnloadClip.wav using Guid(73147e391f7f4ed42b6390fee4b10066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20971212ff04ab2502d3d483759a25f') in 0.007179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2slideback.mp3
-  artifactKey: Guid(2f8403984cc678a4ba992a7e4da25134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2slideback.mp3 using Guid(2f8403984cc678a4ba992a7e4da25134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807b1f781885565c1b0272109024f677') in 0.007228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Weapons/GunShotAudio/Sniper2Sounds/sniper2load.wav
-  artifactKey: Guid(cda0235cb03d8a345815877d18dfbffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/Sniper2Sounds/sniper2load.wav using Guid(cda0235cb03d8a345815877d18dfbffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d15b4cb218d99df98654ec1c8e349e5') in 0.019222 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2load.wav
-  artifactKey: Guid(1a68704b12fc0d44e810969f7481e2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2load.wav using Guid(1a68704b12fc0d44e810969f7481e2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4c553a224ff2daf300ee4f19312f2f') in 0.007460 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Weapons/GunShotAudio/Sniper1Sounds/Sniper1LoadClip.mp3
-  artifactKey: Guid(f18e2d8cd1508f7458a61f9dc0936614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/Sniper1Sounds/Sniper1LoadClip.mp3 using Guid(f18e2d8cd1508f7458a61f9dc0936614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51d3c6dd2b133718535d16bdbf780e1') in 0.019775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.158218 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2unload.wav
-  artifactKey: Guid(d3245a929b4015240925b6ddf85840a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Sniper2Sounds/sniper2unload.wav using Guid(d3245a929b4015240925b6ddf85840a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc108402f03d03a5753192adfed2f83') in 0.007625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Tec9Sounds/Tec9Load.wav
-  artifactKey: Guid(d92ed8814a071a24abfc80067f8ddb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Tec9Sounds/Tec9Load.wav using Guid(d92ed8814a071a24abfc80067f8ddb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73eb9020790f39012de0600cf7e3e283') in 0.007834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Weapons/GunShotAudio/Tec9Sounds/Tec9Gunshot.wav
-  artifactKey: Guid(aa24bc1431a1a1544bfdeeaab8284d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/GunShotAudio/Tec9Sounds/Tec9Gunshot.wav using Guid(aa24bc1431a1a1544bfdeeaab8284d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd19ab0d3712d25a68c94d58716d4734') in 0.013749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.047838 seconds.
-  path: Assets/Prefabs/Weapon/GunShotAudio/Tec9Sounds/Tec9Unload.wav
-  artifactKey: Guid(7b88a363bfeeadd40a78ccfb16d2d021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapon/GunShotAudio/Tec9Sounds/Tec9Unload.wav using Guid(7b88a363bfeeadd40a78ccfb16d2d021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2fae2dd8b346b38b9f516f77e35a08') in 0.028491 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 35360.080294 seconds.
+  path: Assets/PlayerModel/Player1.prefab
+  artifactKey: Guid(1cd6de8c877f8c444a3020e4012ef87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerModel/Player1.prefab using Guid(1cd6de8c877f8c444a3020e4012ef87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0bfb34196cffb27ddfc83c468018c9') in 0.649513 seconds 
