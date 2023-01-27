@@ -21,7 +21,11 @@ public class DefaultState : ActionBaseState
 
     bool CanReload(ActionStateManager action)
     {
-        if (action.ammo.extraAmmo == 0) return false;
-         return true;
+
+        if (action.ammo.extraAmmo == 0)
+        {
+            return false;
+        }
+        return true;
     }
 }
